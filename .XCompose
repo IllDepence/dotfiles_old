@@ -35,19 +35,8 @@
 
 # Japanese
 # - punctuation
-Lock <space> : "　" U3000
-Lock <comma> : "、" U3001
+Lock <colon> : "、" U3001
 Lock <period> : "。" U3002
-Lock <colon> : "：" UFF1A
-Lock <question> : "？" UFF1F
-Lock <exclam> : "！" UFF01
-Lock <parenleft> : "（" UFF08
-Lock <parenright> : "）" UFF09
-Lock <bracketleft> : "［" UFF3B
-Lock <bracketright> : "］" UFF3D
-Lock <braceleft> : "｛" UFF5B
-Lock <braceright> : "｝" UFF5D
-Lock <asciitilde> : "〜" U301C
 Lock <apostrophe> <apostrophe> : "「" U300C
 Lock <apostrophe> <space> : "」" U300D
 Lock <quotedbl> <quotedbl> : "『" U300E
