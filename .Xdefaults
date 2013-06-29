@@ -2,6 +2,8 @@
 URxvt.background: #2d2d2d
 URxvt.foreground: #f0f0f0
 URxvt.scrollBar: false
+!dark blue
+URxvt.color12: #0072ff
 
 !urls
 URxvt.perl-ext: default,url-select
@@ -11,3 +13,6 @@ URxvt.url-select.underline: true
 
 !remote
 URxvt.termName: rxvt
+
+!xlock
+XLock.mode: blank
