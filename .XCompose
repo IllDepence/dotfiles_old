@@ -35,13 +35,13 @@
 
 # Japanese
 # - punctuation
-Lock <less> : "、" U3001
-Lock <greater> : "。" U3002
-Lock <quotedbl> <quotedbl> : "「" U300C
-Lock <quotedbl> <space> : "」" U300D
-Lock <apostrophe> <apostrophe> : "『" U300E
-Lock <apostrophe> <space> : "』" U300F
-Lock <underscore> : "ー" U30FC
+Lock <colon> : "、" U3001
+Lock <period> : "。" U3002
+Lock <apostrophe> <apostrophe> : "「" U300C
+Lock <apostrophe> <space> : "」" U300D
+Lock <quotedbl> <quotedbl> : "『" U300E
+Lock <quotedbl> <space> : "』" U300F
+Lock <minus> : "ー" U30FC
 # - hiragana
 Lock <a> : "ぁ" U3041
 Lock <A> : "あ" U3042
