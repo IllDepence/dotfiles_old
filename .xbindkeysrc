@@ -1,0 +1,24 @@
+# Change display output
+#	m:0x18 + c:32
+#"~/toggledisp"
+#	Alt+Mod2 + o
+
+# Increase volume
+#	m:0x10 + c:123
+"amixer set Master playback 1+"
+	Mod2 + XF86AudioRaiseVolume
+
+# Decrease volume
+#	m:0x10 + x:122
+"amixer set Master playback 1-"
+	Mod2 + XF86AudioLowerVolume
+
+# Mute volume
+#	m:0x10 + c:121
+"amixer set Master toggle"
+	Mod2 + XF86AudioMute
+
+# Take screenshot
+#	m:0x10 + c:107
+"import -window root -quality 100 ~/eigenedaten/bilder/screenshots/`date +%s`.png"
+	Mod2 + Print
