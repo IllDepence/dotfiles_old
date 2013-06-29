@@ -1,0 +1,16 @@
+auto-center = yes
+enable-colors = yes
+color background = none
+color title = white
+color title-bold = brightwhite
+color line = brightblue
+color line-flags = brightwhite
+color list = white
+color list-bold = brightwhite
+color browser-directory = white
+color browser-playlist = white
+color progressbar = brightblue
+color status-state = brightwhite
+color status-song  = white
+color status-time  = white
+color alert = cyan
