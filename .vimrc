@@ -1,3 +1,3 @@
 syntax on
 set background=dark
-map  :w!:!clear; pdflatex %; xpdf %<.pdf&
+" map  :w!:!clear; pdflatex %; xpdf %<.pdf&

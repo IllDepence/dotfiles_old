@@ -23,6 +23,7 @@ compinit
 
 alias ls='ls --color=auto'
 alias df='df -h'
+alias chromium='chromium --proxy-server="socks5://127.0.0.1:9999"'
 mvcd() {
 	mv $1 $2;cd $2
 	}

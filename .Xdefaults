@@ -1,2 +1,13 @@
-XTerm*background: #2d2d2d
-XTerm*foreground: #f0f0f0
+!look
+URxvt.background: #2d2d2d
+URxvt.foreground: #f0f0f0
+URxvt.scrollBar: false
+
+!urls
+URxvt.perl-ext: default,url-select
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.launcher: /usr/bin/firefox -new-tab
+URxvt.url-select.underline: true
+
+!remote
+URxvt.termName: rxvt
