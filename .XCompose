@@ -1,14 +1,7 @@
-<Multi_key> <s> <z> : "ß" U00DF
-
-<Multi_key> <apostrophe> <a> : "ä" U00E4
-<Multi_key> <apostrophe> <o> : "ö" U00F6
-<Multi_key> <apostrophe> <u> : "ü" U00FC
-<Multi_key> <apostrophe> <A> : "Ä" U00C4
-<Multi_key> <apostrophe> <O> : "Ö" U00D6
-<Multi_key> <apostrophe> <U> : "Ü" U00DC
-
+# general
+# - punctuation
 <Multi_key> <minus> <minus> : "—" U2014
-<Multi_key> <less> <3> : "♥" U2665
+# - symbols
 <Multi_key> <exclam> <equal> : "≠" U2260
 <Multi_key> <E> : "∈" U2208
 <Multi_key> <slash> <E> : "∉" U2209
@@ -16,13 +9,49 @@
 <Multi_key> <slash> <O> : "∅" U2205
 <Multi_key> <underscore> <less> : "≤" U2264
 <Multi_key> <underscore> <greater> : "≥" U2265
-
+<Multi_key> <e> <u> <r> : "€" U20AC
+<Multi_key> <d> <e> <g> : "°" U00B0
+<Multi_key> <s> <e> <c> : "′" U2032
+<Multi_key> <m> <i> <n> : "″" U2033
+<Multi_key> <n> <o> <t> : "¬" U00AC
+<Multi_key> <v> <v> : "✓" U2713
+<Multi_key> <V> <V> : "✔" U2714
+<Multi_key> <x> <x> : "✗" U2717
+<Multi_key> <X> <X> : "✘" U2718
+<Multi_key> <less> <3> : "♥" U2665
+# - misc
 <Multi_key> <z> <w> : "‌" U200C
 
+# German
+# - ligatures
+<Multi_key> <s> <z> : "ß" U00DF
+# - umlauts
+<Multi_key> <apostrophe> <a> : "ä" U00E4
+<Multi_key> <apostrophe> <o> : "ö" U00F6
+<Multi_key> <apostrophe> <u> : "ü" U00FC
+<Multi_key> <apostrophe> <A> : "Ä" U00C4
+<Multi_key> <apostrophe> <O> : "Ö" U00D6
+<Multi_key> <apostrophe> <U> : "Ü" U00DC
+
+# Japanese
+# - punctuation
+Lock <less> : "、" U3001
+Lock <greater> : "。" U3002
+Lock <quotedbl> <quotedbl> : "「" U300C
+Lock <quotedbl> <space> : "」" U300D
+Lock <apostrophe> <apostrophe> : "『" U300E
+Lock <apostrophe> <space> : "』" U300F
+Lock <underscore> : "ー" U30FC
+# - hiragana
+Lock <a> : "ぁ" U3041
 Lock <A> : "あ" U3042
+Lock <i> : "ぃ" U3043
 Lock <I> : "い" U3044
+Lock <u> : "ぅ" U3045
 Lock <U> : "う" U3046
+Lock <e> : "ぇ" U3047
 Lock <E> : "え" U3048
+Lock <o> : "ぉ" U3049
 Lock <O> : "お" U304A
 Lock <K> <A> : "か" U304B
 Lock <G> <A> : "が" U304C
@@ -30,7 +59,7 @@ Lock <K> <I> : "き" U304D
 Lock <G> <I> : "ぎ" U304E
 Lock <K> <U> : "く" U304F
 Lock <G> <U> : "ぐ" U3050
-Lock <K> <E> : "ぐ" U3051
+Lock <K> <E> : "け" U3051
 Lock <G> <E> : "げ" U3052
 Lock <K> <O> : "こ" U3053
 Lock <G> <O> : "ご" U3054
@@ -48,6 +77,7 @@ Lock <T> <A> : "た" U505F
 Lock <D> <A> : "だ" U3060
 Lock <T> <I> : "ち" U3061
 Lock <D> <I> : "ぢ" U3062
+Lock <t> <u> : "っ" U3063
 Lock <T> <U> : "つ" U3064
 Lock <D> <U> : "づ" U3065
 Lock <T> <E> : "て" U3066
@@ -79,17 +109,20 @@ Lock <M> <I> : "み" U307F
 Lock <M> <U> : "む" U3080
 Lock <M> <E> : "め" U3081
 Lock <M> <O> : "も" U3082
+Lock <y> <a> : "ゃ" U3083
 Lock <Y> <A> : "や" U3084
+Lock <y> <u> : "ゅ" U3085
 Lock <Y> <U> : "ゆ" U3086
+Lock <y> <u> : "ょ" U3087
 Lock <Y> <O> : "よ" U3088
 Lock <R> <A> : "ら" U3089
 Lock <R> <I> : "り" U308A
 Lock <R> <U> : "る" U308B
 Lock <R> <E> : "れ" U308C
 Lock <R> <O> : "ろ" U308D
+Lock <w> <a> : "ゎ" U308E
 Lock <W> <A> : "わ" U308F
 Lock <W> <I> : "ゐ" U3090
 Lock <W> <E> : "ゑ" U3091
 Lock <W> <O> : "を" U3092
 Lock <N> <space> : "ん" U3093
-Lock <underscore> : "ー" U30FC
