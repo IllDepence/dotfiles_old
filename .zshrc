@@ -29,6 +29,7 @@ alias chromium='chromium --enable-webgl --ignore-gpu-blacklist'
 mvcd() {
 	mv $1 $2;cd $2
 	}
+alias unzip-jp='UNZIP="-O cp932" unzip -x '
 PROMPT="[%n@%m %1~]$ "
 
 bindkey "^[[1;5D" backward-word
