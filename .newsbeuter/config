@@ -2,8 +2,10 @@ browser "firefox %u"
 auto-reload yes
 reload-time 15
 show-keymap-hint no
-color info white blue bold
+color info white blue
 color listfocus white color239 bold
+color listnormal_unread green color239
+color listfocus_unread green color239 bold
 
 # vim like navigation
 bind-key J next-feed articlelist
@@ -13,6 +15,7 @@ bind-key k prev
 bind-key l open
 bind-key l open-in-browser-and-mark-read articlelist
 bind-key L open articlelist
+bind-key r toggle-article-read
 bind-key h quit
 
 unbind-key ENTER
