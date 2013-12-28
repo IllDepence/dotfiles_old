@@ -3,6 +3,7 @@ HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 setopt appendhistory
+setopt HIST_IGNORE_SPACE
 unsetopt autocd beep extendedglob
 bindkey -v
 bindkey '\e[3~' delete-char
