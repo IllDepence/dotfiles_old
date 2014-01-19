@@ -2,14 +2,17 @@
 URxvt.background: #2d2d2d
 URxvt.foreground: #f0f0f0
 URxvt.scrollBar: false
+URxvt.font: fixed
 !dark blue
 !URxvt.color12: #0072ff
 
-!urls
-URxvt.perl-ext: default,url-select
+!urls & font size
+URxvt.perl-ext: default,url-select,font-size
 URxvt.keysym.M-u: perl:url-select:select_next
 URxvt.url-select.launcher: /usr/bin/firefox -new-tab
 URxvt.url-select.underline: true
+URxvt.keysym.C-Up:     perl:font-size:increase
+URxvt.keysym.C-Down:   perl:font-size:decrease
 
 !remote
 URxvt.termName: rxvt
