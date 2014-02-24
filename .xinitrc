@@ -5,6 +5,6 @@ export XMODIFIERS='@im=uim'
 
 xmodmap ~/.Xmodmap
 xbindkeys
-PATH=$PATH:/home/tarek/.scripts/
+PATH=$PATH:/home/tarek/.scripts/:/opt/android-sdk/tools/
 setbg.sh
 exec spectrwm
