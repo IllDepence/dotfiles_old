@@ -35,7 +35,4 @@ mvcd() {
 alias unzip-jp='UNZIP="-O cp932" unzip -x '
 PROMPT="[%n@%m %1~]$ "
 
-bindkey "^[[1;5D" backward-word
-bindkey "^[[1;5C" forward-word
-
 export LS_COLORS='di=1:fi=00:ex=96'
