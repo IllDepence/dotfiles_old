@@ -33,6 +33,10 @@ mvcd() {
     mv $1 $2;cd $2
     }
 alias unzip-jp='UNZIP="-O cp932" unzip -x '
+alias nano=vim
+alias edit=vim
+alias emacs=vim
+
 PROMPT="[%n@%m %1~]$ "
 
 export LS_COLORS='di=1:fi=00:ex=96'
