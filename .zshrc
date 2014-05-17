@@ -40,3 +40,4 @@ alias emacs=vim
 PROMPT="[%n@%m %1~]$ "
 
 export LS_COLORS='di=1:fi=00:ex=96'
+export PATH=$PATH:/home/tarek/.scripts:/home/tarek/.scripts/3rd_party:
