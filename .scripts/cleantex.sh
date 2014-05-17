@@ -1,3 +1,3 @@
 #!/bin/sh
 
-rm *.aux *.bcf *.glo *.idx *.log *.toc *.ist *.acn *.acr *.alg *.bbl *.blg *.dvi *.glg *.gls *.ilg *.ind *.lof *.lot *.maf *.mtc *.mtc1 *.out *.swp *.run.xml *.synctex.gz &> /dev/null
+rm *.aux(N) *.bcf(N) *.glo(N) *.idx(N) *.log(N) *.toc(N) *.ist(N) *.acn(N) *.acr(N) *.alg(N) *.bbl(N) *.blg(N) *.dvi(N) *.glg(N) *.gls(N) *.ilg(N) *.ind(N) *.lof(N) *.lot(N) *.maf(N) *.mtc(N) *.mtc1(N) *.out(N) *.swp(N) *.run.xml(N) *.synctex.gz(N)

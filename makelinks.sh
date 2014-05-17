@@ -2,12 +2,16 @@
 
 EXCLUDE='(\.git/)|(makelinks\.sh)|(README)|(\.swp$)'
 f_count=`find -type f | grep -vP $EXCLUDE | wc -l`
-echo -e "\e[1;32mThis script will replace the following $f_count files with symlinks:\e[00m"
+
+echo -e "\e[1;32mThis script will replace the following files with symlinks:\e[00m"
 
 for (( i=1; i<=$f_count; i++ ))
 do
     f_curr=`find -type f | grep -vP $EXCLUDE | head -n $i | tail -n 1 | cut -c 3-`
-    echo -e "~/$f_curr"
+    if ! [ -h ~/$f_curr ] # assuming no one else made config files symlinks for some reason
+    then
+        echo -e "~/$f_curr"
+    fi
 done
 
 validinput=0
@@ -41,8 +45,11 @@ then
     for (( i=1; i<=$f_count; i++ ))
         do
             f_curr=`find -type f | grep -vP $EXCLUDE | head -n $i | tail -n 1 | cut -c 3-`
-            rm -f `echo ~/$f_curr`
-            ln -s `echo $PWD/$f_curr` `echo ~/$f_curr`
+            if ! [ -h ~/$f_curr ]
+            then
+                rm -f `echo ~/$f_curr`
+                ln -s `echo $PWD/$f_curr` `echo ~/$f_curr`
+            fi
         done
     echo -e "\e[1;32mDone. :)\e[00m "
 fi
