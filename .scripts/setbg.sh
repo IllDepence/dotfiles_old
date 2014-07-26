@@ -1,8 +1,17 @@
 #!/bin/sh
-l=${#1}
-if [ "$l" -lt "1" ]
-then
-find ~/eigenedaten/bilder/wallpaper/1920x1080/set -type f \( -name '*.jpg' -o -name '*.png' \) -print0 |shuf -n1 -z | xargs -0 feh --bg-scale
-else
-find ~/eigenedaten/bilder/wallpaper/$1 -type f \( -name '*.jpg' -o -name '*.png' \) -print0 |shuf -n1 -z | xargs -0 feh --bg-scale
-fi
+
+screen_lines=`xrandr | grep -P "connected [^(]"`
+screen_count=`echo "$screen_lines" | wc -l`
+files=""
+
+for (( i=1; i<=$screen_count; i++ ))
+do
+screen_line=`echo "$screen_lines" | head -n $i | tail -n 1`
+screen_res=`echo "$screen_line" | grep -Po "\d+x\d+"`
+image=`find "/home/tarek/eigenedaten/bilder/wallpaper/$screen_res/" -type f \( -name '*.jpg' -o -name '*.png' \) -print0 | shuf -n1 -z`
+files="$files $image"
+done
+
+feh --bg-scale $files
+
+# i presume this'll fail when xrandr ouput order doesn't match screen order. but it does for me right now so — meh.
