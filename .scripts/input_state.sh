@@ -1,7 +1,7 @@
 #!/bin/sh
 
-while true
-do
+#while true
+#do
 
 x=`xset q | grep -Po 'Caps Lock:\s+(on|off)' | grep -Po '\S+$'`
 case $x in
@@ -12,6 +12,6 @@ case $x in
 esac
 echo -e $state
 
-sleep 1
+#sleep 1
 
-done
+#done

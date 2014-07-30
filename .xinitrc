@@ -6,4 +6,5 @@ export XMODIFIERS='@im=uim'
 xmodmap ~/.Xmodmap
 xbindkeys
 setbg.sh
-exec spectrwm
+#exec spectrwm
+exec i3
